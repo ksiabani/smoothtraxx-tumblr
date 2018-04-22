@@ -40,107 +40,7 @@
     <script src="http://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
     <![endif]-->
 
-    <style>
-        /* Colors */
-        body {
-        background: {BackgroundColor};
-        }
-
-        .blog-title {
-        font-family: {TitleFont}, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
-        font-weight: {TitleFontWeight};
-        }
-
-        .blog-title a,
-        .description,
-        .search-no-results,
-        .likes-no-likes,
-        .related-posts-wrapper > h2,
-        .loader .loader-bar,
-        .widget-title {
-        color: {TitleColor};
-        }
-
-        a {
-        color: {AccentColor};
-        }
-
-        #pagination a,
-        .nav-wrapper .nav-item .label {
-        color: {AccentColor};
-        }
-
-        #pagination a.next:after {
-        border-left-color: {AccentColor};
-        }
-
-        #pagination a.previous:after {
-        border-right-color: {AccentColor};
-        }
-
-        .header-image.cover {
-            background-image: url({HeaderImage});
-        }
-
-        .user-avatar {
-        background-color: {BackgroundColor};
-        border-color: {BackgroundColor};
-        }
-
-        .avatar-style-square .user-avatar {
-        -webkit-box-shadow: 0 0 0 4px {BackgroundColor};
-        box-shadow: 0 0 0 4px {BackgroundColor};
-        }
-
-        .no-header-image .logo-wrapper,
-        .contain-header-image .logo-wrapper {
-        color: {AccentColor};
-        }
-
-        /* Adjust logo for light accents on light backgrounds */
-        .light-on-light.no-header-image .logo-wrapper,
-        .light-on-light.contain-header-image .logo-wrapper {
-            color: #444;
-        }
-
-        /* Adjust logo for dark accents on dark backgrounds */
-        .dark-on-dark.no-header-image .logo-wrapper,
-        .dark-on-dark.contain-header-image .logo-wrapper {
-            color: #fff;
-        }
-
-        /* Sticky nav colors */
-        .nav-fixed {
-        background-color: {BackgroundColor};
-        }
-
-        .nav-responsive .inline-nav::after {
-        background-image: linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
-        background-image: -webkit-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
-        background-image: -moz-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
-        background-image: -ms-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
-        background-image: -o-linear-gradient(left, rgba({RGBBackgroundColor}, 0) 0%, rgba({RGBBackgroundColor},1) 100%);
-        }
-
-        @media screen and (max-device-width: 568px) {
-            .header-image.cover {
-                background-image: url({HeaderImage-640});
-                -webkit-background-size: cover;
-                background-size: cover;
-            }
-
-            .avatar-style-square .user-avatar {
-            -webkit-box-shadow: 0 0 0 3px {BackgroundColor};
-            -moz-box-shadow: 0 0 0 3px {BackgroundColor};
-            box-shadow: 0 0 0 3px {BackgroundColor};
-        }
-
-        }
-
-        /* Custom CSS */
-        {CustomCSS}
-    </style>
-    <link rel="stylesheet" href="https://static.tumblr.com/jrpc6d2/wkBp7jqbn/custom.css">
+    <link rel="stylesheet" href="https://static.tumblr.com/jrpc6d2/qRpp7k4yj/custom.css">
 </head>
 <body data-urlencoded-name="{URLEncodedName}" class="{select:Layout}{block:IndexPage} index-page{/block:IndexPage}{block:PermalinkPage} permalink{/block:PermalinkPage}{block:LikesPage} likes-page{/block:LikesPage}{block:FollowingPage} following-page{/block:FollowingPage}{block:SearchPage} search-page{block:NoSearchResults} no-results{/block:NoSearchResults}{block:NoLikes} no-likes{/block:NoLikes}{block:NoPosts} no-posts{/block:NoPosts}{block:NoFollowing} no-following{/block:NoFollowing}{/block:SearchPage}{block:HideHeaderImage} no-header-image{/block:HideHeaderImage}{block:NoStretchHeaderImage} contain-header-image{/block:NoStretchHeaderImage}{block:IfRelatedPosts} display-related-posts{/block:IfRelatedPosts}{block:ShowAdsOnThisPage} show-ads{/block:ShowAdsOnThisPage}">
 
@@ -202,7 +102,6 @@
 </div>
 
 <section id="page">
-    <p>A nice paragraph</p>
     <div class="header-wrapper
                 {block:HideTitle}{block:HideDescription}no-title-desc {/block:HideDescription}{/block:HideTitle}
                 {block:HideHeaderImage}no-image {/block:HideHeaderImage}
@@ -327,7 +226,7 @@
                     <section class="post">
                         {block:Text}
                         <div class="post-content">
-                            {block:Title}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+                            <!--{block:Title}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}-->
                             {block:NotReblog}
                             <div class="body-text">{Body}</div>
                             {/block:NotReblog}
